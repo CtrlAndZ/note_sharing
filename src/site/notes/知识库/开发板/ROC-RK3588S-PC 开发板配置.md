@@ -528,3 +528,13 @@ sudo stty -F /dev/ttyS7 38400
 ``` shell
 cat /dev/ttyS7
 ```
+
+安装必要模块和paho.mqtt.c模块
+``` shell
+cd /root
+sudo apt install libssl-dev
+git clone https://github.com/eclipse/paho.mqtt.c.git
+cd paho.mqtt.c/
+make
+make install
+```
